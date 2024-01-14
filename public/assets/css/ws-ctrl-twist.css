@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'ws-ctrl-twist';
+	src: url(../../assets/fonts/ws-ctrl-twist.eot?70473154=) format('embedded-opentype'),
+	url(../../assets/fonts/ws-ctrl-twist.eot?70473154=) format('embedded-opentype'),
+	url(../../assets/fonts/ws-ctrl-twist.svg?70473154=) format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: 'ws-ctrl-twist';
+	src: url(../../assets/fonts/ws-ctrl-twist.ttf) format('truetype'),
+	url(../../assets/fonts/ws-ctrl-twist.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}
