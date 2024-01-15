@@ -74,8 +74,8 @@ class SettingResource extends Resource
 
                                 Forms\Components\Card::make()->schema([
                                     Forms\Components\TextInput::make('name_ar')->nullable()->label('اسم الموقع عربي'),
-                                    Forms\Components\Textarea::make('address')->nullable()->label('عنوان الموقع بالعربي'),
-                                    Forms\Components\RichEditor::make('description')->nullable()->label('سياسية الخصوصية بالعربي'),
+                                    Forms\Components\Textarea::make('address_ar')->nullable()->label('عنوان الموقع بالعربي'),
+                                    Forms\Components\RichEditor::make('description_ar')->nullable()->label('سياسية الخصوصية بالعربي'),
                                 ]),
 
 
