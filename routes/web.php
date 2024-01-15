@@ -4,8 +4,14 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ShareController;
+use App\Http\Controllers\SocialController;
 use App\Http\Controllers\UserController;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
+use Laravel\Socialite\Facades\Socialite;
+use Illuminate\Support\Facades\Auth;
+
 use App\Http\Controllers\ProfileController;
 use App\Enums\OrderStatusEnum;
 use App\Http\Controllers\AgentContoller;
@@ -55,11 +61,18 @@ Route::name('langs.')->middleware('locale')->group(function () {
     Route::get('/policy',[JobController::class,'index'])->name('policy');
     Route::get('/share/{id}',[ShareController::class,'share'])->name('share');
 
+    Route::get('/auth/google',[SocialController::class,'google'])->name('google');
+    Route::get('/auth/callback', [SocialController::class,'handel']);
+
+
+
 
     Route::get('/test', [IndexController::class, 'test']);
 
 
 });
+
+
 
 Route::get('country', [CountryController::class, 'index'])->name('country');
 Route::get('/slider', [SliderController::class, 'index'])->name('allslider');

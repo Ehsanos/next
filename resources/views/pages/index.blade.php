@@ -10,6 +10,7 @@
             </div>
         @endif
         <header class="mt-1">
+            <a class="bg-primary" href="{{route('langs.google')}}">freee</a>
             <div class="top-content">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 {{--                    <ol class="carousel-indicators">--}}

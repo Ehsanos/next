@@ -167,6 +167,9 @@ return [
         Elibyy\TCPDF\ServiceProvider::class,
         Biscolab\ReCaptcha\ReCaptchaServiceProvider::class,
         Jorenvh\Share\Providers\ShareServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
+
+
 
 
 
@@ -195,6 +198,7 @@ return [
         'PDF' => Elibyy\TCPDF\Facades\TCPDF::class,
         'ReCaptcha' => Biscolab\ReCaptcha\Facades\ReCaptcha::class,
         'Share' => Jorenvh\Share\ShareFacade::class,
+        'Socialite'=>Laravel\Socialite\SocialiteServiceProvider::class,
 
 
 
